@@ -13,9 +13,9 @@ st.set_page_config(layout='wide')
 @st.experimental_memo(show_spinner=False)
 def query_db(query):
     connection = psycopg2.connect(dbname='postgres',
-                        user='leowu',
-                        password='wuliqun123',
-                        host='rightmove.ci3wcic7jnj4.eu-west-2.rds.amazonaws.com',
+                        user='',
+                        password='',
+                        host='',
                         port='5432')
     df = pd.read_sql(query, connection)
     connection.close()
